@@ -1,1 +1,161 @@
-/* You can add global styles to this file, and also import other style files */
+.logo {
+  width: 200px;
+  box-shadow: 0 0 5px blue;
+}
+.banner {
+  position: absolute;
+  background: -webkit-radial-gradient(#560e86, #0e0011);
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 25vh;
+}
+span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+span::after {
+  content: var(--l);
+  position: absolute;
+  transform: rotateX(90deg);
+  filter: blur(30px);
+}
+.foto {
+  background-image: url(../src/assets/images/fotoCurriculo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+  height: 40vh;
+  background-size: cover;
+  z-index: 3;
+}
+.text-center.bajar {
+  padding-top: 30vh;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.barra[role="progressbar"] {
+  --size: 6rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+.barra[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+footer {
+  margin-top: 10px;
+  border-top: double;
+  border-color: silver;
+}
+.bg-rosa {
+background-color: #ffe9b8;
+}
+.card-estandar {
+  background-color: #ecc8e1;
+  position: absolute;
+}
+.card-estandar:before,
+.card-estandar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-position: 0% 0%;
+  opacity: 0.2;
+  animation: holoGradient 25s ease infinite;
+}
+.card-estandar:after {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+  background-size: 80%;
+  mix-blend-mode: color-dodge;
+  opacity: 1;
+  z-index: 2;
+  animation: holoSparkle 20s ease infinite;
+}
+@keyframes holoSparkle {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
+@keyframes holoGradient {
+  3% {
+    opacity: 0;
+  }
+  5% {
+    background-position: 0% 0%;
+  }
+  7% {
+    opacity: 0.5;
+  }
+  9% {
+    background-position: 100% 100%;
+  }
+  11% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    background-position: 100% 100%;
+  }
+  55% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0;
+    background-position: 0% 0%;
+  }
+}
+.bordeCarrusel {
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+}
+.bg-morado {
+  background-color: #560e86;
+}
+.bg-gris {
+  background-color: rgb(241, 239, 235);
+}
+.text-bg-rosa {
+  background-color: #f3e7ef!important;
+}
+.nav-tabs .nav-item .nav-tabs.nav-item.show.nav-link, .nav-tabs .nav-link.active {
+  background-color: #560e86!important;
+  color: white!important;
+}
+.nav-link {
+  color: black!important;
+}
+.nav-tabs .nav-link {
+  border-color: black black silver!important;
+}
+.btn-primary {
+  background-color: #560e86!important;
+}

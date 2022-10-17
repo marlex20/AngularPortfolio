@@ -1,0 +1,90 @@
+{
+  "name": "Marlenys Palma",
+  "backImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif",
+  "title": "Desarrollador Web Full Stack Jr",
+  "photo": "../assets/images/fotoCurriculo.png",
+  "about":"Profesional Autodidacta, dedicada 02 años incansables a la busqueda del conocimiento de la tecnologia para optimizar el rendimiento de los trabajos para lograr la excelencia",
+  
+  "redes":     
+  { 
+    "linkedin":"https://linkedin.com/in/marlenys-p-439891101",
+    "instagram":"https://www.instagram.com/marlex_20",
+    "twitter":"https://twitter.com/pmarlex"
+  },
+
+  "experience": [
+    {
+      "image":"../assets/images/bbva.png",
+      "name":"Banco BBVA Argentina S.A",
+      "title": "Analista de Datos",
+      "date":"Noviembre 2020 - Enero 2022",
+      "description":"Analisis de Datos en la seccional"
+    },
+    {
+      "image":"https://seeklogo.com/images/I/intech-logo-FF4A88A990-seeklogo.com.gif",  
+      "name":"INTECH",
+      "title":"Diseñadores UX y UI",
+      "date":"Febrero 2022- Mayo 2022",
+      "description":"Encargada del aspecto visual de la interfaz, y de garantizar que la navegación y acciones en los procesos"
+    }
+  ],
+
+  "education": [
+    {
+      "image":"http://lumetrio.com/images/og_image.jpg",
+      "name":"Lumetrio",
+      "title":"Programación Backend",
+      "date":"Abril 2022 - Octubre 2022",
+      "description":"Desarrollo de programación Backend Basico"
+    },
+    {
+      "image":"https://www.plataforma5.la/static/media/P5Desktop.d1842dd2bff00677295cd7d28a29e60c.svg",
+      "name":"Plataforma Coding BootCamp",
+      "title":"HTML, CSS Y JAVASCRIPT",
+      "date":"Enero 2020- Mayo 2020",
+      "description":"Introducción a la base de la Programación"
+    }
+  ],
+
+  "skills":[ 
+    {
+      "name":"Diseño Gráfico",
+      "value":75   
+    },
+    {
+      "name":"Resolución de Problemas",
+      "value":80   
+    },
+    {
+      "name":"Dominio de Ingles",
+      "value":75   
+    },
+    {
+      "name":"Pensamiento Matematico",
+      "percentage":"90%",
+      "value":90   
+    },
+    {
+      "name":"HTML",
+      "value":85   
+    }
+
+],
+
+ "projects": [
+  {
+    "image":"data:image/png;base64,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",
+    "name":"Remis Oeste",
+    "date":"2021",
+    "description":"App de servicios de traslados terrestre",
+    "url":"https://play-lh.googleusercontent.com/b0MT9vazJqOJSMYTK_G9phWTapzxsf7L7px8xPUIuQCNhMa6nthYBVYtvPQOHknb2g"
+  },
+  {
+    "image":"../assets/images/mundohadas.png",
+    "name":"Mundo Hadas Pzo",
+    "date":"2022",
+    "description":"Diseño Web Ecommerce",
+    "url":"https://instagram.com/mundohadas_pzo?igshid=YmMyMTA2M2Y="
+  }
+]
+}

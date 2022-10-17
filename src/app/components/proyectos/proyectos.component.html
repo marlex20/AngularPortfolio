@@ -1,0 +1,31 @@
+<!--Proyectos-->
+<div class="container-fluid carousel-dark">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let proyecto of proyectos">
+      <div class="card text-bg-rosa mb-3 bordeCarrusel">
+        <div class="card-header fs-4 text-center">Proyectos</div>
+        <div class="card-body">
+          <div class="card mb-3" >
+            <div class="row g-0">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <img [src]="proyecto.image" alt="logo" class="img-fluid rounded-start" width="200px">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body text-center">
+                  <h5 class="card-title">{{proyecto.name}}</h5>
+                  <p class="card-text">
+                   {{proyecto.description}} <br>
+                   {{proyecto.date}} <br>
+                   {{proyecto.url}}
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>     
+  </div>
