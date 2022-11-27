@@ -11,6 +11,14 @@
   background-repeat: no-repeat;
   margin-bottom: 25vh;
 }
+.banner-formu {
+  position: absolute;
+  background: -webkit-radial-gradient(#560e86, #0e0011);
+  height: 61vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 span::before {
   content: var(--l);
   position: absolute;
@@ -24,13 +32,11 @@ span::after {
   filter: blur(30px);
 }
 .foto {
-  background-image: url(../src/assets/images/fotoCurriculo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10%;
-  height: 40vh;
-  background-size: cover;
+  width: 12rem;
+  height: 16rem;
   z-index: 3;
+  border-radius: 10%;
+  position: relative;
 }
 .text-center.bajar {
   padding-top: 30vh;
@@ -64,9 +70,7 @@ footer {
   border-top: double;
   border-color: silver;
 }
-.bg-rosa {
-background-color: #ffe9b8;
-}
+
 .card-estandar {
   background-color: #ecc8e1;
   position: absolute;
@@ -158,4 +162,34 @@ background-color: #ffe9b8;
 }
 .btn-primary {
   background-color: #560e86!important;
+}
+body {
+  background-image: url(../src/assets/images/cute.jpg);
+  background-size: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: 1rem!important;
+
+}
+.carousel-indicators [data-bs-target] {
+	background-color: #b52222!important;
+}
+.logos {
+  border: solid 2px white !important;
+  border-radius: 5%;
+  background-color: azure;
+  width: 39px;
+  height: 39px;
+}
+.neon {
+letter-spacing:-2px;
+color: black;
+text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 8px #ff00de, 0 0 10px #ff00de;
+-webkit-text-fill-color: black;
+-webkit-text-stroke-color:#C546F7;
+-webkit-text-stroke-width:0.2px;
+-moz-text-fill-color: #F4ECFF;
+-moz-text-stroke-color:#C546F7;
+-moz-text-stroke-width:0.5px;
 }

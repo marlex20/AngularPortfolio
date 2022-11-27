@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Projects } from 'src/app/Datas';
 import { PortfolioService } from 'src/app/servicio/portfolio.service';
 
 @Component({
@@ -7,17 +8,18 @@ import { PortfolioService } from 'src/app/servicio/portfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-proyectos:any;
-  constructor(private datosPorfolio:PortfolioService) { }
+  
+  proyectos: Projects[] = [];;
+
+  constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
-
-    this.datosPorfolio.obtenerDatos().subscribe((data) => { 
-      this.proyectos = data.projects;
-      
+    this.datosPortfolio.getProjects().subscribe((proyectos) => { 
+      this.proyectos = proyectos; //compila sin colocar db.db.projects???     
     })
-
   }
+ }
+
+   
 
 
-}

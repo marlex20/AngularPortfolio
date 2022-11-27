@@ -1,0 +1,52 @@
+<body class="bg-rosa">
+  <!--Navegación-->
+  <section>
+  <!--cinta-->
+    <nav class="navbar nav-expand-lg bg-dark">
+      <div class="container-fluid">
+        <app-logo></app-logo>
+        <ul class="btn-group" role="group">
+          <app-botonreturn></app-botonreturn>
+        </ul>
+      </div>
+    </nav>
+  </section>
+   <!-- Contenido de los Formularios -->
+   <section>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-1 col-sm-1 col-md-2 col-lg-3 col-xg-3 col-xxg-3">
+        </div>
+        <div class="col-10 col-sm-10 col-md-8 col-lg-6 col-xg-6 col-xxg-6 py-2 bg-white bg-opacity-75">
+          <!-- Links de los formularios -->
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item bg-gris" role="presentation">
+              <button class="nav-link active" id="iniciar-sesion" data-bs-toggle="tab" data-bs-target="#iniciar-sesion-pane" type="button" role="tab" aria-controls="iniciar-sesion-pane" aria-selected="true">Iniciar Sesión</button>
+            </li>
+            <li class="nav-item bg-gris" role="presentation">
+              <button class="nav-link" id="registrarse" data-bs-toggle="tab" data-bs-target="#registrarse-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Registrarse</button>
+            </li>
+          </ul>
+          <!--Inicio de Formularios-->
+          <div class="tab-content" id="myTabContent">
+            <!--Iniciar Sesión-->
+            <div class="tab-pane fade show active" id="iniciar-sesion-pane" role="tabpanel" aria-labelledby="iniciar-sesion" tabindex="0">
+              <app-iniciosesion></app-iniciosesion>
+            </div>
+            <!-- Registrarse -->
+            <div class="tab-pane fade" id="registrarse-pane" role="tabpanel" aria-labelledby="registrarse" tabindex="1">
+              <app-registrarse></app-registrarse>
+            </div>            
+          </div>
+        </div>
+        <div class="col-1 col-sm-1 col-md-2 col-lg-3 col-xg-3 col-xxg-3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center fixed-bottom">
+    Copyright &copy;  Marlenys Palma - 2022
+  </footer>
+  
+     </body> 
+     

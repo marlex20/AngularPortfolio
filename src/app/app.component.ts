@@ -9,12 +9,12 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'AngularMarlenys';
-
-  constructor(config: NgbCarouselConfig) {
+  
+   constructor(config: NgbCarouselConfig) {
+		// customize default values of carousels used by this component tree
     config.interval= 50000;
-    config.keyboard = true;
-    config.pauseOnHover = true;
+		config.wrap = false;
+		config.keyboard = false;
+		config.pauseOnHover = true;
   }
-
-
 }
