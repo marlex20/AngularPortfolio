@@ -1,9 +1,7 @@
 
 <app-formuproyectos 
 *ngIf="hasRoute('/dashboard')"
-[selection]="selection"
-(onAddProject)="addProject($event)"
-(updateItemProjectEvent)="updateProject($event)"
+
 >
 </app-formuproyectos>
 
@@ -24,16 +22,11 @@
             {{proyecto.url}}
             </p>
           </div>
-          <div class="mb-3" *ngIf="hasRoute('/dashboard')" >            
-            <button type="button" class="btn btn-danger" (click)="deleteProject(proyecto)">Eliminar</button>          
-            <button type="button" class="btn btn-primary" (click)="onProjectSelected(proyecto)">Seleccionar</button>
-          </div>
+
         </div>
         <div class="col-md-2">
           <div class="col-md-2">
-            <div *ngIf="selection?.name" >
-              <p>Su Selección es: {{ selection.name | titlecase }}</p>    
-            </div>
+
           </div>
         </div>
       </div>

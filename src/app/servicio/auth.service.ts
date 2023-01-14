@@ -10,24 +10,25 @@ export class AuthService {
   urlRegister = 'https://reqres.in/api/register';
   token: any;
 
-  constructor (private http: HttpClient, private router: Router) { }
-  login(email: string, password: string){
-    this.http.post(this.urlLogin + '/authenticate', {email: email, password: password})
-    .subscribe((resp: any) => {
-      this.router.navigate(['dashboard']);
-      localStorage.setItem('auth.token', resp.token)
-    })
+  constructor(private http: HttpClient, private router: Router) { }
+  login(email: string, password: string) {
+    this.http.post(this.urlLogin + '/authenticate', { email: email, password: password })
+      .subscribe((resp: any) => {
+        this.router.navigate(['dashboard']);
+        localStorage.setItem('auth.token', resp.token)
+      })
   }
-  register(email: string, password: string){
-    this.http.post(this.urlRegister + '/authenticate', {email: email, password: password})
-    .subscribe((resp: any) => {
-      this.router.navigate(['login']);
-    })
+  register(email: string, password: string) {
+    this.http.post(this.urlRegister + '/authenticate', { email: email, password: password })
+      .subscribe((resp: any) => {
+        this.router.navigate(['login']);
+      })
   }
-  logout(){
+  logout() {
     localStorage.removeItem('token');
   }
   public get logIn(): boolean {
     return (localStorage.getItem('token') !== null);
   }
+
 }

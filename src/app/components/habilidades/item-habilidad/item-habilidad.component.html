@@ -1,8 +1,6 @@
 <app-formuhabilidades
 *ngIf="hasRoute('/dashboard')"
-[selection]="selection"
-(onAddSkill)="addSkill($event)"
-(updateItemSkillEvent)="updateSkill($event)"
+
 >
 </app-formuhabilidades>
 <!--Habilidades-->
@@ -20,8 +18,7 @@
                   <p >{{ habilidad.name}}</p>
                   <div class="barra mx-auto" role="progressbar" [attr.aria-valuenow]="habilidad.val" aria-valuemin="0" aria-valuemax="100" style="--value:{{ habilidad.val }}"></div>
                   <div class="mb-3" *ngIf="hasRoute('/dashboard')" >            
-                    <button type="button" class="btn btn-danger" (click)="deleteSkill(habilidad)">Eliminar</button>          
-                     <button type="button" class="btn btn-primary" (click)="onSkillSelected(habilidad)">Seleccionar</button>
+                    
                   </div>
                 </div>
               </div>
@@ -32,8 +29,6 @@
     </div>
   </div>
   <div class="col-2">
-    <div *ngIf="selection?.name" >
-      <p>Su Selección es: {{ selection.name | titlecase }}</p>    
-    </div>
+
   </div>
 </div>

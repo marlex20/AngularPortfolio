@@ -1,34 +1,11 @@
 {
-  "name": [
-    {
-      "id": 1,
-      "name": "Marlenys Palma"
-    }
-  ],
-  "backImage": [
-    {
-      "id": 1,
-      "backImage": "nuevo"
-    }
-  ],
-  "title": [
-    {
-      "id": 1,
-      "title": "Desarrollador Web Full Stack Jr"
-    }
-  ],
-  "photo": [
-    {
-      "id": 1,
-      "photo": "../assets/images/fotoCurriculo.png"
-    }
-  ],
-  "about": [
-    {
-      "id": 1,
-      "about": "Profesional Autodidacta, dedicada 02 años incansables a la busqueda del conocimiento de la tecnologia para optimizar el rendimiento de los trabajos para lograr la excelencia"
-    }
-  ],
+  
+  "name": "Marlenys Palma",
+  "backImage": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif",
+  "title": "Desarrollador Web Full Stack Jr",
+  "photo": "../assets/images/fotoCurriculo.png",
+  "about": "Profesional Autodidacta, dedicada 02 años incansables a la busqueda del conocimiento de la tecnologia para optimizar el rendimiento de los trabajos para lograr la excelencia",
+ 
   "network": [
     {
       "id": 1,

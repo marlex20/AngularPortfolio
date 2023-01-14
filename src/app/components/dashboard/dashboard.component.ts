@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Projects } from '../Datas';
-import { PortfolioService } from '../servicio/portfolio.service';
+import { Projects } from '../../Datas';
+import { PortfolioService } from '../../servicio/portfolio.service';
 
 
 @Component({
