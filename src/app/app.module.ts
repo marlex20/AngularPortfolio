@@ -21,7 +21,7 @@ import { LogoComponent } from './components/navegacion/logo/logo.component';
 import { BotonloginComponent } from './components/navegacion/botonlogin/botonlogin.component';
 import { EntradaComponent } from './components/entrada/entrada.component';
 import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
-import { RegistrarseComponent } from './components/registrarse/registrarse.component';
+import { RegistrarseComponent } from './components/acceso/registrarse/registrarse.component';
 import { ListaComponent } from './components/navegacion/lista/lista.component';
 import { BotonlogoutComponent } from './components/navegacion/botonlogout/botonlogout.component';
 import { FormuredesComponent } from './components/acceso/formuredes/formuredes.component';
